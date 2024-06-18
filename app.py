@@ -23,6 +23,7 @@ def add_song(name, genre, duration, popularity):
     st.session_state.songs.append(Song(name, duration, genre, popularity))
 
 def main():
+    st.set_page_config(page_title="Ultimate Playlist Generator", page_icon=":musical_note:")
     st.title("My Playlist Manager")
     options = ["Add a song", "Delete a song" , "View your playlist" , "Generate your playlist"]
     action = st.sidebar.selectbox("Choose an option", options)
