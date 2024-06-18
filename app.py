@@ -11,11 +11,11 @@ class Song:
 # Initialize the session state for songs if it doesn't exist
 if 'songs' not in st.session_state:
     st.session_state.songs = [
-        Song("Song1", 4, "Rock", 8),
-        Song("Song2", 3, "Pop", 5),
-        Song("Song3", 5, "Jazz", 9),
-        Song("Song4", 6, "Rock", 7),
-        Song("Song5", 2, "Pop", 6)
+        Song("ZBlack", 4, "Haryanavi", 7),
+        Song("Jaat Warrior's 2", 3, "Haryanavi", 6),
+        Song("Bad Boy", 3, "Hip-Hop", 7),
+        Song("Sequência da Dz7", 2, "Phonk", 7),
+        Song("Rude Boy", 2, "Phonk", 6)
     ]
 
 # Example function to add a song (you might have a different implementation)
