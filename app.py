@@ -18,13 +18,13 @@ if 'songs' not in st.session_state:
         Song("Rude Boy", 2, "Phonk", 6)
     ]
 
-# Example function to add a song (you might have a different implementation)
+# Function to add a song (you might have a different implementation)
 def add_song(name, genre, duration, popularity):
     st.session_state.songs.append(Song(name, duration, genre, popularity))
 
 def main():
     st.set_page_config(page_title="Ultimate Playlist Generator", page_icon=":musical_note:")
-    st.title("My Playlist Manager")
+    st.title("Playlist Manager")
     options = ["Add a song", "Delete a song" , "View your playlist" , "Generate your playlist"]
     action = st.sidebar.selectbox("Choose an option", options)
     
